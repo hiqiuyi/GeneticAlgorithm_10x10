@@ -1,5 +1,8 @@
 const _ = require('lodash');
 const logger = require('./common/logger');
+const config = require('./config');
+
+const canCount = config.canCount;
 
 /**
  * 随机排序函数
@@ -35,7 +38,7 @@ function initWorld(arr) {
     let col = arr[0].length;
 
     let randomArr = new Array(row * col).fill(0);
-    for (let i = 0; i < (row * col) / 2; i++) {
+    for (let i = 0; i < canCount; i++) {
         randomArr[i] = 1;
     }
 

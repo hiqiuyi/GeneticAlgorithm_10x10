@@ -33,7 +33,7 @@ function run(strategyArr) {
 }
 
 /**
- * 每种策略执行taskNum次，求改策略的平均得分
+ * 每种策略执行taskNum次，求策略的平均得分
  */
 function start(strategyArrAll) {
     let scoreMap = {};
